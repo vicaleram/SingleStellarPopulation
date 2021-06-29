@@ -1,0 +1,390 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Single Stellar Population &mdash; Single Stellar Population 0.1 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Single Population Module" href="examples/SingleStellarP_example.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> Single Stellar Population
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Installation:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Example</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="examples/SingleStellarP_example.html">Single Population Module</a></li>
+</ul>
+<p class="caption"><span class="caption-text">API documentation:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Single Stellar Population</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#module-SingleStellarP">SingleStellarP</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Single Stellar Population</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Single Stellar Population</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/API.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  
+<style>
+/* CSS overrides for sphinx_rtd_theme */
+
+/* 24px margin */
+.nbinput.nblast.container,
+.nboutput.nblast.container {
+    margin-bottom: 19px;  /* padding has already 5px */
+}
+
+/* ... except between code cells! */
+.nblast.container + .nbinput.container {
+    margin-top: -19px;
+}
+
+.admonition > p:before {
+    margin-right: 4px;  /* make room for the exclamation icon */
+}
+
+/* Fix math alignment, see https://github.com/rtfd/sphinx_rtd_theme/pull/686 */
+.math {
+    text-align: unset;
+}
+</style>
+<div class="section" id="single-stellar-population">
+<h1>Single Stellar Population<a class="headerlink" href="#single-stellar-population" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="module-SingleStellarP">
+<span id="singlestellarp"></span><h2>SingleStellarP<a class="headerlink" href="#module-SingleStellarP" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt id="SingleStellarP.SingleStellarP">
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">SingleStellarP.</span></code><code class="sig-name descname"><span class="pre">SingleStellarP</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">M_1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">M_2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">alpha</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">epsilon_0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#SingleStellarP.SingleStellarP" title="Permalink to this definition">¶</a></dt>
+<dd><p>Class containing the operations and graphs for the SingleStellarPopulation mododule</p>
+<dl class="field-list simple">
+<dt class="field-odd">Variables</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>self.M_1</strong> – Lower edge of initial mass function</p></li>
+<li><p><strong>self.M_2</strong> – Upper edge of initial mass function</p></li>
+<li><p><strong>alpha</strong> – Power index used for the IMF</p></li>
+<li><p><strong>epsilon_0</strong> – parameter value for the number of stars</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py method">
+<dt id="SingleStellarP.SingleStellarP.MCclustersim">
+<code class="sig-name descname"><span class="pre">MCclustersim</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">n_MC</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">path</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">model_B_array</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">B_limit</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">500.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">powlaw</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#SingleStellarP.SingleStellarP.MCclustersim" title="Permalink to this definition">¶</a></dt>
+<dd><p>Simulates cluster population using MESA data files and a Monte Carlo Markov Chain (MCMC)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Par n_MC</dt>
+<dd class="field-odd"><p>number of MC steps</p>
+</dd>
+<dt class="field-even">Par path</dt>
+<dd class="field-even"><p>path to the folder with the MESA files organzied by mass and magnetic field</p>
+</dd>
+<dt class="field-odd">Par model_B_array</dt>
+<dd class="field-odd"><p>Array containing the values of the Magnetic field in kG</p>
+</dd>
+<dt class="field-even">Par B_limit</dt>
+<dd class="field-even"><p>Limit of the value of the Magnetic field</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="SingleStellarP.SingleStellarP.dispMCmag">
+<code class="sig-name descname"><span class="pre">dispMCmag</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#SingleStellarP.SingleStellarP.dispMCmag" title="Permalink to this definition">¶</a></dt>
+<dd><p>Displays the results from MCclustersim()</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="SingleStellarP.SingleStellarP.displaymaginc">
+<code class="sig-name descname"><span class="pre">displaymaginc</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#SingleStellarP.SingleStellarP.displaymaginc" title="Permalink to this definition">¶</a></dt>
+<dd><p>Displays the resuls from singleclustersim()</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="SingleStellarP.SingleStellarP.initialbfunc">
+<code class="sig-name descname"><span class="pre">initialbfunc</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model_B_array</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#SingleStellarP.SingleStellarP.initialbfunc" title="Permalink to this definition">¶</a></dt>
+<dd><p>Determines and graphs the initial magnetic field function (IBF) according to a uniforma and power law distribution</p>
+<dl class="field-list simple">
+<dt class="field-odd">Par model_B_array</dt>
+<dd class="field-odd"><p>Array containing the values of the Magnetic field in kG</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="SingleStellarP.SingleStellarP.populhist">
+<code class="sig-name descname"><span class="pre">populhist</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#SingleStellarP.SingleStellarP.populhist" title="Permalink to this definition">¶</a></dt>
+<dd><p>Creates histogram with Mass distribution of the star cluster</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="SingleStellarP.SingleStellarP.singleclustersim">
+<code class="sig-name descname"><span class="pre">singleclustersim</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">path</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">model_B_array</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">B_limit</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">500.0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#SingleStellarP.SingleStellarP.singleclustersim" title="Permalink to this definition">¶</a></dt>
+<dd><p>Simulates a single cluster population using MESA data files</p>
+<dl class="field-list simple">
+<dt class="field-odd">Par path</dt>
+<dd class="field-odd"><p>path to the folder with the MESA files organzied by mass and magnetic field</p>
+</dd>
+<dt class="field-even">Par model_B_array</dt>
+<dd class="field-even"><p>Array containing the values of the Magnetic field in kG</p>
+</dd>
+<dt class="field-odd">Par B_limit</dt>
+<dd class="field-odd"><p>Limit of the value of the Magnetic field</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt id="SingleStellarP.get_B_pow">
+<code class="sig-prename descclassname"><span class="pre">SingleStellarP.</span></code><code class="sig-name descname"><span class="pre">get_B_pow</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">N</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">model_B_array</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">array([0,</span> <span class="pre">1,</span> <span class="pre">5,</span> <span class="pre">10,</span> <span class="pre">20])</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Bmin</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.01</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Bmax</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">30.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">alphaB</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.8</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#SingleStellarP.get_B_pow" title="Permalink to this definition">¶</a></dt>
+<dd><p>Function that generates a power law disribution of initial magnetic field functions</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>N</strong> – Number of stars in the cluster</p></li>
+<li><p><strong>model_B_array</strong> – The model_B_array represent the lower edge of the magnetic field bins in kG.</p></li>
+<li><p><strong>Bmin</strong> – Bmax is the lower edge of the last bin</p></li>
+<li><p><strong>Bmax</strong> – Bmax is the higher edge of the last bin</p></li>
+<li><p><strong>alpha</strong> – Value for the powerlaw index</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="SingleStellarP.get_B_uni">
+<code class="sig-prename descclassname"><span class="pre">SingleStellarP.</span></code><code class="sig-name descname"><span class="pre">get_B_uni</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">N</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">model_B_array</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">array([0,</span> <span class="pre">1,</span> <span class="pre">5,</span> <span class="pre">10,</span> <span class="pre">20])</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Bmax</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">30.0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#SingleStellarP.get_B_uni" title="Permalink to this definition">¶</a></dt>
+<dd><p>Function that generates a uniform disribution of initial magnetic field functions</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>N</strong> – Number of stars in the cluster</p></li>
+<li><p><strong>model_B_array</strong> – The model_B_array represent the lower edge of the magnetic field bins in kG.</p></li>
+<li><p><strong>Bmax</strong> – Bmax is the higher edge of the last bin</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="SingleStellarP.read_track">
+<code class="sig-prename descclassname"><span class="pre">SingleStellarP.</span></code><code class="sig-name descname"><span class="pre">read_track</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">file</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#SingleStellarP.read_track" title="Permalink to this definition">¶</a></dt>
+<dd><p>Function that reads the MESA model files with all of its parameters</p>
+<p>Data file must be of type .data</p>
+<dl class="field-list simple">
+<dt class="field-odd">Par file</dt>
+<dd class="field-odd"><p>the file path containing the data to be read</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>Returns ndarray with the parameters</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="SingleStellarP.read_track_small">
+<code class="sig-prename descclassname"><span class="pre">SingleStellarP.</span></code><code class="sig-name descname"><span class="pre">read_track_small</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">file</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#SingleStellarP.read_track_small" title="Permalink to this definition">¶</a></dt>
+<dd><p>Function that reads the MESA model with the columns of Star age, log(Teff), log(L), log(R), center_h1, Bp</p>
+<p>Data file must be of type .data</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>file</strong> – the file path containing the data to be read</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>Returns ndarray with the parameters</p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="examples/SingleStellarP_example.html" class="btn btn-neutral float-left" title="Single Population Module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2021, Victor Ramirez Delgado.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

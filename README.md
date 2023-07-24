@@ -7,3 +7,5 @@ The goal of our work is to explore the possible explanations for the observable 
 This repository presents the Jupyter notebooks used in our analysis and any other relevant code. In the examples folder you can find a series of notebooks that **attempt** to give an ordered approach to our analysis. 
 
 Feel free to contact us if you have any comments, questions or feedback!
+
+![alt-text](https://github.com/vicaleram/SingleStellarPopulation/blob/main/hr_z14mix1.gif)

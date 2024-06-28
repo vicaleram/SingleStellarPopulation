@@ -8,4 +8,4 @@ This repository presents the Jupyter notebooks used in our analysis and any othe
 
 Feel free to contact us if you have any comments, questions or feedback!
 
-![alt-text](https://github.com/vicaleram/SingleStellarPopulation/blob/main/hr_z14mix1.gif)
+![alt-text](https://github.com/vicaleram/SingleStellarPopulation/blob/main//hr_strbrstBf25_01.gif)

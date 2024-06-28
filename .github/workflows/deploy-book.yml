@@ -38,13 +38,13 @@ jobs:
     # to have the requirements in a file
     - name: Install dependencies
       run: |
-        pip install -r docs-jb-env.yml
+        pip install -r JB-env.yml
 
     # Build the book
     - name: Build the book
       shell: bash -l {0}
       run: |
-        jupyter-book build docs-jb
+        jupyter-book build JB
 
     # Push the book's HTML to github-pages
     # Upload the book's HTML as an artifact

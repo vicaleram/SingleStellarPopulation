@@ -1,0 +1,10 @@
+format: jb-book
+root: Welcome.md
+parts: 
+  - caption: GetStarted
+    chapters:
+    - file: GetStarted/GetStarted1.md
+  - caption: Tutorials
+    chapters:
+    - file: Tutorials/Tutorial1.md
+
